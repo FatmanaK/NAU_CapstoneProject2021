@@ -11,10 +11,10 @@ import com.RentCar.utils.Driver;
 import java.util.concurrent.TimeUnit;
 
 
-public class CreateCalendarEventPage {
-   // @FindBy(css = "[title='Create Calendar event']")
+public class CreateCalendarEventPage extends BasePage {
+   @FindBy(css = "[title='Create Calendar event']")
     //@FindBy(xpath= "//*[@class='btn main-group btn-primary pull-right']")
-    @FindBy(xpath="//div[@class='btn-group']) [1])")
+   // @FindBy(xpath="//div[@class='btn-group']) [1])")
     private WebElement createCalendarEventBtn;
 
     @FindBy(name = "oro_calendar_event_form[title]")
@@ -29,8 +29,7 @@ public class CreateCalendarEventPage {
 
     public void clickOnCreateCalendarEvent() {
         BrowserUtils.clickOnElement(createCalendarEventBtn);
-       // Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-       // createCalendarEventBtn.click();
+
     }
 
     public void enterDescription(String text) {
