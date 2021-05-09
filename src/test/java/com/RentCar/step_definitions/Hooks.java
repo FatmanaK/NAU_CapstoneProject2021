@@ -29,14 +29,13 @@ public class Hooks {
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
-
     @BeforeStep
     public void beforeStep(){
         System.out.println("I'm before step");
     }
 //    this hook will run only before scenarios with a tag @db
 
-    /**
+    /*
      * @db Scenario: I don't know but here I'm connecting to DB
      * Given user runs following query "SELECT * ...."
      * <p>
