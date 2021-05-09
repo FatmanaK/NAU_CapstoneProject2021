@@ -8,8 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.RentCar.utils.Driver;
 
-import java.util.concurrent.TimeUnit;
-
 
 public class CreateCalendarEventPage extends BasePage {
    @FindBy(css = "[title='Create Calendar event']")

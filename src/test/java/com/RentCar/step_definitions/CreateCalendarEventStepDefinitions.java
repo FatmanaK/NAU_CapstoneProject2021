@@ -17,14 +17,9 @@ public class CreateCalendarEventStepDefinitions {
     @Given("user clicks on create calendar event button")
     public void user_clicks_on_create_calendar_event_button() {
       createCalendarEventPage.clickOnCreateCalendarEvent();
-
-
     }
 
-    /*
-      | Title       | B20 Graduation Party                        |
-      | Description | All B20 friends are invited for this party! |
-     */
+
     @When("user adds new calendar event information")
     public void user_adds_new_calendar_event_information(Map<String, String> data) {
         String title = data.get("Title");

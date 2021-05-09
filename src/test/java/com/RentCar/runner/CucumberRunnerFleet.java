@@ -28,3 +28,4 @@ public class CucumberRunnerFleet {
     // scenario must have EITHER OR tags
     //java logic if(@s_o || @with_two_columns),
 }
+

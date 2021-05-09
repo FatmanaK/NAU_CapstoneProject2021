@@ -14,3 +14,4 @@ Feature: As user, I want to be able to create calendar events
     Then user verifies that new calendar event is displayed:
       | Title       | MidTerm Capstone Presentation              |
       | Description |All friends are invited for this session    |
+
